@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Second Brain</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Second Brain</h1>
+    </header>
+    <main>
+      <form id="pdf-form">
+        <label for="pdf-url">PDF URL</label>
+        <div class="input-row">
+          <input
+            id="pdf-url"
+            type="url"
+            placeholder="https://arxiv.org/pdf/2509.05382"
+            value="https://arxiv.org/pdf/2509.05382"
+          />
+          <button type="submit">Open</button>
+        </div>
+      </form>
+      <div id="status"></div>
+      <div id="pdf-viewer"></div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
