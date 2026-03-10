@@ -4,5 +4,16 @@
     "api/**/*.ts": {
       "runtime": "@vercel/node@5.1.5"
     }
-  }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=180"
+        }
+      ]
+    }
+  ]
 }
